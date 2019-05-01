@@ -11,3 +11,10 @@
 </head>
 
 <body>
+    <nav>
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem</a>
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Ipsum</a>
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Dolor</a>
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Sit</a>
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Amet</a>
+    </nav>
