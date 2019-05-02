@@ -10,7 +10,7 @@
     <title>First Choice Computer Services</title>
 </head>
 
-<body>
+<body onload="startup()">
     <nav>
         <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem</a>
         <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Ipsum</a>
