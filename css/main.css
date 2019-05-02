@@ -14,6 +14,21 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0 66px;
+}
+
+.nav-left {
+    height: 100%;
+    position: static;
+    width: 400px;
+    z-index: 4;
+}
+
+.nav-left div {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 1024px) {
