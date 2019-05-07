@@ -7,7 +7,7 @@
                 <a href="?page=pricing">Pricing Page</a>
             </div>
             <div class="googReview">
-
+                    <img src="http://www.placehold.it/500x500" alt="">
             </div>
         </div>
     </div>
