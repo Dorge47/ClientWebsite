@@ -15,10 +15,52 @@ footer {
     justify-content: space-around;
 }
 
+.googReview {
+    width: 40%;
+}
+
 html, body {
     height: 100%;
     margin: 0;
     width: 100%;
+}
+
+.mainCont {
+    align-items: center;
+    background: url(../img/placeholdbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+}
+
+.menubar {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    justify-content: space-around;
+    padding: 15px;
+    width: 45px;
+}
+
+.menubar span {
+    background-color: black;
+    width: 18px;
+    height: 2px;
+}
+
+.nav-left {
+    background-color: white;
+    box-shadow: 0 3px 5px grey;
+    height: 100%;
+    left: -400px;
+    position: absolute;
+    transition-duration: .25s;
+    width: 400px;
+    z-index: 4;
 }
 
 .nav-top {
@@ -30,11 +72,22 @@ html, body {
     justify-content: space-between;
     padding: 0 66px;
     position: relative;
+    z-index: 5;
+}
+
+.nav-top .left {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-top .left p {
+    padding: 0 20px;
 }
 
 .nav-top p {
     font-size: 22px;
-
 }
 
 .nav-top .right {
@@ -45,48 +98,48 @@ html, body {
 
 .nav-top .right p {
     color: #48487f;
-    margin: 0 16px;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-}
-
-.nav-left {
-    background-color: white;
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 400px;
-    z-index: 4;
+    margin: 0 16px;
 }
 
 .navul {
     color: #48487f;
     display: flex;
     flex-direction: column;
-    height: 50%;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.mainCont {
-    margin: 0;
-    background: url(../img/placeholdbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.navul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    height: 64px;
+    padding-left: 120px;
+    padding-top: 40px;
+    width: 400px;
 }
 
 .row {
+    align-content: stretch;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    align-content: stretch;
+}
+
+#span1 {
+    transition-duration: .25s;
+}
+
+#span2 {
+    transition-duration: .25s;
+}
+
+#span3 {
+    transition-duration: .25s;
 }
 
 .title {
@@ -97,13 +150,7 @@ html, body {
 .txtCont {
     width: 40%;
 }
-.googReview {
-    width: 40%;
-}
-
-
-
-
+/*https://goo.gl/maps/JDVas8QyXwGMDcdX8*/
 @media only screen and (max-width: 1024px) {
 
 }

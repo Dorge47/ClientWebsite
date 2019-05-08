@@ -16,6 +16,11 @@
     <nav>
         <div class="nav-top">
             <div class="left">
+                <div class="menubar" onclick="toggleNav()">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                </div>
                 <p class="title">1st Choice Computer Services</p>
             </div>
             <div class="right">
