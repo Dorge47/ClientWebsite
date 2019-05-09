@@ -7,8 +7,25 @@ a {
     text-decoration: none;
 }
 
+#bgImg {
+    width: 120%;
+    height: 110%;
+    z-index: 0;
+    position: relative;
+    margin: 0;
+    filter: blur(5px) brightness(50%);
+    top: 0;
+}
+
+.centeredRow {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+
 
 footer {
+    z-index: 1;
     color: #cccccc;
     display: flex;
     flex-direction: row;
@@ -27,13 +44,11 @@ html, body {
 
 .mainCont {
     align-items: center;
-    background: url(../img/placeholdbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: row;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 .menubar {
@@ -149,7 +164,35 @@ html, body {
 
 .txtCont {
     width: 40%;
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2%;
+    font-family: 'Open Sans', sans-serif;
+
 }
+
+.txtCont a {
+    background: rgba(50, 50, 230, 0.4);
+    padding: 2%;
+    border-radius: 20px;
+    transition: .4s;
+    width: 20%;
+
+}
+
+.txtCont a:hover {
+    background: rgba(100, 100, 230, 0.4);
+}
+
+.txtButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
 /*https://goo.gl/maps/JDVas8QyXwGMDcdX8*/
 @media only screen and (max-width: 1024px) {
 
