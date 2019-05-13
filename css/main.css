@@ -17,13 +17,6 @@ a {
     top: 0;
 }
 
-.centeredRow {
-    z-index: 1;
-    position: absolute;
-    overflow: hidden;
-}
-
-
 footer {
     z-index: 1;
     color: #cccccc;
@@ -33,7 +26,8 @@ footer {
 }
 
 .googReview {
-    width: 40%;
+    height: 500px;
+    width: 600px;
 }
 
 html, body {
@@ -111,7 +105,7 @@ html, body {
     justify-content: space-between;
 }
 
-.nav-top .right p {
+.nav-top .right a {
     color: #48487f;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
@@ -145,6 +139,30 @@ html, body {
     justify-content: space-around;
 }
 
+.rowContainer {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.twoRows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rowServices {
+    align-content: center;
+    text-align: center;
+}
+
 #span1 {
     transition-duration: .25s;
 }
@@ -163,13 +181,19 @@ html, body {
 }
 
 .txtCont {
-    width: 40%;
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
     padding: 2%;
     font-family: 'Open Sans', sans-serif;
+}
 
+.mainpgeTxt {
+    width: 40%;
+}
+
+.servicesTxt {
+    width: 30%;
 }
 
 .txtCont a {
@@ -178,6 +202,7 @@ html, body {
     border-radius: 20px;
     transition: .4s;
     width: 20%;
+    text-align: center;
 
 }
 

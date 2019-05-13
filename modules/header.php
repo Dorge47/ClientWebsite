@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="application/javascript" src="application.js"></script>
-    <title>First Choice Computer Services</title>
+    <title>Computer Services Network</title>
 </head>
 
 <body onload="startup()">
@@ -21,12 +21,12 @@
                     <span id="span2"></span>
                     <span id="span3"></span>
                 </div>
-                <p class="title">1st Choice Computer Services</p>
+                <p class="title">Computer Services Network</p>
             </div>
             <div class="right">
-                <p><i class="fas fa-comments-dollar"></i> Get Quote</p>
-                <p><i class="fas fa-phone"></i> Call Now</p>
-                <p><i class="fas fa-directions"></i> Get Directions</p>
+                <a><i class="fas fa-comments-dollar"></i> Get Quote</a>
+                <a><i class="fas fa-phone"></i> Call Now</a>
+                <a><i class="fas fa-directions"></i> Get Directions</a>
             </div>
         </div>
         <div class="nav-left">

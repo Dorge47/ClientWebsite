@@ -26,3 +26,9 @@ function toggleNav() {
         menubar.children[2].style.transform = '';
     }
 }
+
+function toggleBox(boxNum) {
+    if(boxNum == "box1") {
+        
+    }
+}
