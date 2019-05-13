@@ -8,13 +8,18 @@
                 <div class="txtButtons">
                     <a href="?page=services">Services Page</a>
                     <a href="?page=pricing">Pricing Page</a>
+                    <a href="atom://teletype/portal/89d74dfd-b18e-4d15-9370-d49fd7d0c02e">Link</a>
                 </div>
             </div>
             <div class="googReview">
-                <php
-                    
+                <p class="reviewName">
+                <?php
+                    $reviewsFile = fopen("reviews.json","r");
+                    $reviewsRaw = fread($reviewsFile,filesize("reviews.json"));
+                    $reviewsParsed = json_decode($reviewsRaw);
+                    echo $reviewsParsed[0]->name;
                 ?>
-                <img src="http://www.placehold.it/600x500" alt="">
+                </p>
             </div>
         </div>
     </div>

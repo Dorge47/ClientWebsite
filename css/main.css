@@ -28,6 +28,11 @@ footer {
 .googReview {
     height: 500px;
     width: 600px;
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -151,16 +156,16 @@ html, body {
     justify-content: space-around;
 }
 
+.rowServices {
+    align-content: center;
+    text-align: center;
+}
+
 .twoRows {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-.rowServices {
-    align-content: center;
-    text-align: center;
 }
 
 #span1 {
