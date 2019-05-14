@@ -17,16 +17,16 @@
         <div class="nav-top">
             <div class="left">
                 <div class="menubar" onclick="toggleNav()">
-                    <span id="span1"></span>
-                    <span id="span2"></span>
-                    <span id="span3"></span>
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
                 </div>
                 <p class="title">Computer Services Network</p>
             </div>
             <div class="right">
                 <a><i class="fas fa-comments-dollar"></i> Get Quote</a>
-                <a><i class="fas fa-phone"></i> Call Now</a>
-                <a><i class="fas fa-directions"></i> Get Directions</a>
+                <a href="tel:+1-559-326-7015" target="_blank"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="https://goo.gl/maps/JDVas8QyXwGMDcdX8" target="_blank"><i class="fas fa-directions"></i> Get Directions</a>
             </div>
         </div>
         <div class="nav-left">

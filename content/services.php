@@ -1,6 +1,10 @@
 <div class="mainCont">
     <img src="http://placehold.it/1920x1080" alt="" id="bgImg">
+    
     <div class="rowContainer">
+        <div class="header">
+            <h1>Computer Services</h1>
+        </div>
         <div class="row rowServices">
             <div class="txtCont servicesTxt">
                 <h1>Computer Repair</h1>

@@ -8,37 +8,104 @@ a {
 }
 
 #bgImg {
-    width: 120%;
     height: 110%;
-    z-index: 0;
-    position: relative;
-    margin: 0;
     filter: blur(5px) brightness(50%);
+    margin: 0;
+    position: relative;
     top: 0;
+    width: 120%;
+    z-index: 0;
+}
+
+.column {
+
+    width: 30%;
+}
+
+.columnTxt {
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.columnTxt p {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    transition: .5s;
+    margin: 0;
+    border-bottom: 2px dashed rgba(230, 230, 230, 0.5);
+}
+
+.columnTxt p:last-child {
+    border-bottom: 0;
+}
+
+.columnTxt p:hover {
+    background: rgba(100, 100, 230, 0.4);
+}
+
+.columnCont {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+align-content: center;    width: 100%;
+}
+
+.columnHead {
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 1%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.columnMain {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 footer {
-    z-index: 1;
     color: #cccccc;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .googReview {
-    height: 500px;
-    width: 600px;
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
-    padding: 2%;
     font-family: 'Open Sans', sans-serif;
+    height: 500px;
+    overflow: hidden;
+    padding: 2%;
+    width: 600px;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     width: 100%;
+}
+
+.header {
+    width: 80%;    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: center;
+    width: 80%;
 }
 
 .mainCont {
@@ -48,6 +115,10 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+}
+
+.mainpgeTxt {
+    width: 40%;
 }
 
 .menubar {
@@ -62,8 +133,8 @@ html, body {
 
 .menubar span {
     background-color: black;
-    width: 18px;
     height: 2px;
+    width: 18px;
 }
 
 .nav-left {
@@ -136,6 +207,25 @@ html, body {
     width: 400px;
 }
 
+.reviewTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.reviewTop p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reviewTop p:last-child {
+    color: rgba(0,0,0,0.7);
+}
+
 .row {
     align-content: stretch;
     align-items: center;
@@ -145,15 +235,15 @@ html, body {
 }
 
 .rowContainer {
-    z-index: 1;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    height: 100%;
     justify-content: space-around;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .rowServices {
@@ -161,23 +251,28 @@ html, body {
     text-align: center;
 }
 
-.twoRows {
-    display: flex;
-    justify-content: center;
+.servicesTxt {
+    width: 30%;
+}
+
+.span1 {
+    transition-duration: .25s;
+}
+
+.span2 {
+    transition-duration: .25s;
+}
+
+.span3 {
+    transition-duration: .25s;
+}
+
+.stars {
     align-items: center;
-    height: 100%;
-}
-
-#span1 {
-    transition-duration: .25s;
-}
-
-#span2 {
-    transition-duration: .25s;
-}
-
-#span3 {
-    transition-duration: .25s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .title {
@@ -185,30 +280,29 @@ html, body {
     font-family: 'Libre Baskerville', serif;
 }
 
+.twoRows {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
 .txtCont {
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
-    padding: 2%;
     font-family: 'Open Sans', sans-serif;
-}
-
-.mainpgeTxt {
-    width: 40%;
-}
-
-.servicesTxt {
-    width: 30%;
+    padding: 2%;
 }
 
 .txtCont a {
     background: rgba(50, 50, 230, 0.4);
-    padding: 2%;
     border-radius: 20px;
+    color: white;
+    padding: 2%;
+    text-align: center;
     transition: .4s;
     width: 20%;
-    text-align: center;
-
 }
 
 .txtCont a:hover {
@@ -216,10 +310,10 @@ html, body {
 }
 
 .txtButtons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 
