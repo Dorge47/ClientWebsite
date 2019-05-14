@@ -8,7 +8,6 @@
                 <div class="txtButtons">
                     <a href="?page=services">Services Page</a>
                     <a href="?page=pricing">Pricing Page</a>
-                    <a href="atom://teletype/portal/6f2161e5-3e3b-4819-9b88-1c675074af72">No</a>
                 </div>
             </div>
             <div class="googReview">
