@@ -86,9 +86,18 @@ footer {
     border-radius: 20px;
     font-family: 'Open Sans', sans-serif;
     height: 500px;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
     padding: 2%;
     width: 600px;
+}
+
+.googReview .review {
+    border-bottom: 2px groove rgba(0,0,0,0.3);
+}
+
+.googReview .review:last-child {
+    border-bottom: none;
 }
 
 html, body {

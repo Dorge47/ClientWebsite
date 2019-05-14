@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="googReview">
-                
+
                 <?php
 /*
 
@@ -59,9 +59,6 @@ if ( preg_match($pattern, $result, $match) ) {
   $match[1] = trim($match[1], ' =;'); // fix json
   $reviews = json_decode($match[1]);
   $reviews = ltrim($reviews[3][6], ")]}'"); // fix json
-  $myfile = fopen("testfile3.txt", "w");
-  fwrite($myfile, json_encode($reviews));
-  fclose($myfile);
   $reviews = json_decode($reviews);
   $customer = $reviews[0][1][0][14][18];
   $reviews = $reviews[0][1][0][14][52][0];
@@ -77,7 +74,7 @@ function getReviewInfo($reviewPassed) {
     $content = $reviewPassed[3];
     $stars = $reviewPassed[4];
     $fullreview = [$author, $timestamp, $content, $stars];
-    return json_encode($fullreview);
+    return $fullreview;
 }
 
 function printStars($numStars) {
@@ -98,13 +95,13 @@ function printStars($numStars) {
 if (isset($reviews)) {
     foreach ($reviews as $review) {
         $returnedReview = getReviewInfo($review);
-        echo "<div><div class=\"reviewTop\">
-            <p>⭐⭐☆☆☆</p>
-            <p>the dawn of time</p>
+        echo "<div class=\"review\"><div class=\"reviewTop\">
+            <p>", printStars($returnedReview[3]), "</p>
+            <p>", $returnedReview[1], "</p>
         </div>
         <br>
-        <p>\"This message should not appear.\"</p>
-        <p>-Chris Andrade</p></div>";
+        <p>\"", $returnedReview[2], "\"</p>
+        <p>-", $returnedReview[0], "</p></div>";
     }
 }
 
