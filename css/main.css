@@ -126,6 +126,19 @@ html, body {
     overflow: hidden;
 }
 
+.mainCont .hours {
+    align-self: flex-start;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.mainCont .hours p {
+    margin: 5px;
+}
+
 .mainpgeTxt {
     width: 40%;
 }

@@ -34,7 +34,7 @@
                 <a href="?page=pricing&product=manage">View Price</a>
             </div>
             <div class="txtCont servicesTxt">
-                <h1>Service Name</h1>
+                <h1>Factory Recovery</h1>
                 <p>(Place Service Info Here)</p><br>
                 <a href="?page=pricing&product=placeholder">View Price</a>
             </div>
