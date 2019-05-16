@@ -7,6 +7,34 @@ a {
     text-decoration: none;
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.about .head {
+    margin-bottom: 24px;
+}
+
+.address div {
+    display: flex;
+    flex-direction: column;
+}
+
+.address div p {
+    margin: 0;
+}
+
 #bgImg {
     height: 110%;
     filter: blur(5px) brightness(50%);
@@ -18,7 +46,6 @@ a {
 }
 
 .column {
-
     width: 30%;
 }
 
@@ -47,12 +74,13 @@ a {
 }
 
 .columnCont {
+    align-content: center;
     align-items: center;
     display: flex;
     height: 100%;
     flex-direction: row;
     justify-content: space-around;
-align-content: center;    width: 100%;
+    width: 100%;
 }
 
 .columnHead {
@@ -107,7 +135,7 @@ html, body {
 }
 
 .header {
-    width: 80%;    background: rgba(230, 230, 230, 0.5);
+    background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -126,16 +154,7 @@ html, body {
     overflow: hidden;
 }
 
-.mainCont .hours {
-    align-self: flex-start;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-}
-
-.mainCont .hours p {
+.hours p {
     margin: 5px;
 }
 
@@ -227,6 +246,26 @@ html, body {
     padding-left: 120px;
     padding-top: 40px;
     width: 400px;
+}
+
+.phone p {
+    margin: 0;
+}
+
+.purpleBtn {
+    background-color: #48487f;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 19px 54px;
+    text-transform: uppercase;
+}
+
+.purpleBtn:hover {
+    background-color: #4a4a59;
 }
 
 .reviewTop {
