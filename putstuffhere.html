@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Box Test</title>
+</head>
+
+<style>
+
+    .reviewBox {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(230,230,230); 
+        padding: 40px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        margin: 0;
+    }
+    
+    .reviewBtn {
+        background: none;
+        box-shadow: none;
+        border: none;
+        font-size: 5em;
+        position: absolute;
+        z-index: 2;
+        transition: .3s;
+        color: rgb(200, 200, 200);
+        padding: 0;
+    }
+    
+    .reviewBtn:hover {
+        color: rgb(100, 100, 230);
+    }
+    
+    .left {
+        top: 204px;
+        left: 10px;
+    }
+    
+    .right {
+        top: 204px;
+        left: 540px;
+    }
+    
+    .review {
+        position: relative;
+        overflow: hidden;
+        min-width: 100%;
+    }
+    
+    .moveLeft {
+        animation-name: scrollLeft;
+        animation-duration: 1s;
+    }
+    
+    .moveRight {
+        animation-name: scrollRight;
+        animation-duration: 1s;
+    }
+    
+    .returnLeft {
+        animation-name: startLeft;
+        animation-duration: 1s;
+    }
+    
+    .returnRight {
+        animation-name: startRight;
+        animation-duration: 1s;
+    }
+    
+    @keyframes scrollLeft {
+        from{left: 0;}
+        to{left: -1000px;}
+    }
+    
+    @keyframes scrollRight {
+        from{left: 0;}
+        to{left: 1000px;}
+    }
+    
+    @keyframes startLeft {
+        from{left: 1000px;}
+        to{left: 0;}
+    }
+    
+    @keyframes startRight {
+        from{left: -1000px;}
+        to{left: 0;}
+    }
+    
+</style>
+
+
+
+
+<body>
+    <div class="reviewBox">
+        <div class="review" style="display:block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nisi, amet sed. Dolorem sint, exercitationem quod ipsam ullam, sapiente dicta sequi animi est optio iste, quia, velit qui! Ad, officia?</div>
+        <div class="review" style="display:none">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Veritatis Nisi, Amet Sed. Dolorem Sint, Exercitationem Quod Ipsam Ullam, Sapiente Dicta Sequi Animi Est Optio Iste, Quia, Velit Qui! Ad, Officia?</div>
+        <div class="review" style="display:none">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VERITATIS NISI, AMET SED. DOLOREM SINT, EXERCITATIONEM QUOD IPSAM ULLAM, SAPIENTE DICTA SEQUI ANIMI EST OPTIO ISTE, QUIA, VELIT QUI! AD, OFFICIA?</div>
+        <div class="review" style="display:none">lOrEm iPsUm dOlOr sIt aMeT, cOnSeCtEtUr aDiPiSiCiNg eLiT. vErItAtIs nIsI, aMeT SeD. dOlOrEm sInT, eXeRcItAtIoNeM QuOd iPsAm uLlAm, SaPiEnTe dIcTa sEqUi aNiMi eSt oPtIo iStE, qUiA, vElIt qUi! Ad, OfFiCiA?</div>
+        <div class="review" style="display:none">lOREM iPSUM dOLOR sIT aMET, cONSECTETUR aDIPISICING eLIT. vERITATIS nISI, aMET sED. dOLOREM sINT, eXERCITATIONEM qUOD iPSAM uLLAM, sAPIENTE dICTA sEQUI aNIMI eST oPTIO iSTE, qUIA, vELIT qUI! aD, oFFICIA?</div>
+        
+        <button class="reviewBtn left" onclick="reviewMove(true)">&#8249</button>
+        <button class="reviewBtn right" onclick="reviewMove(false)">&#8250</button>
+    </div>
+    
+    
+<script>
+    
+    var reviewList = document.getElementsByClassName("review")
+    var x = 0;
+    var lastVal = 0;
+    //Chris was here
+    
+    function reviewMove(direction) {
+        
+        if(direction) {
+            reviewList[x].style.display = "";
+            reviewList[x].classList.add('moveLeft');
+            lastVal = x
+            x--
+                 if(x < 0) {
+                     x = 4;
+                 }
+                 
+            reviewList[x].classList.add('returnLeft')
+            
+            
+            setTimeout(function() {
+                reviewList[lastVal].style.display = "none";
+                reviewList[x].classList.remove('moveLeft');
+                reviewList[x].classList.remove('returnLeft');
+                reviewList[lastVal].classList.remove('moveLeft');
+                reviewList[lastVal].classList.remove('returnLeft');
+                
+            },950);
+            
+        }else {
+            reviewList[x].classList.add('moveRight');
+            lastVal = x
+            x++
+                 if(x < 0) {
+                     x = 4;
+                 }
+                 
+            reviewList[x].classList.add('returnRight')
+            reviewList[x].style.display = "";
+            
+            setTimeout(function() {
+                reviewList[lastVal].style.display = "none";
+                reviewList[x].classList.remove('moveRight');
+                reviewList[x].classList.remove('returnRight');
+                reviewList[lastVal].classList.remove('moveRight');
+                reviewList[lastVal].classList.remove('returnRight');
+                
+            },950);
+        }
+
+    }
+    
+    
+    
+</script>
+    
+</body>
+</html>
