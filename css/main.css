@@ -144,7 +144,6 @@ a {
     color: white;
     text-align: center;
     transition: .4s;
-    margin: 0 auto;
 }
 
 .contact input::placeholder {
