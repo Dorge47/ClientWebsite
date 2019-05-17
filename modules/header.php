@@ -24,7 +24,7 @@
                 <p class="title">Computer Services Network</p>
             </div>
             <div class="right">
-                <a><i class="fas fa-comments-dollar"></i> Get Quote</a>
+                <a><i class="fas fa-comments"></i> Get Quote</a>
                 <a href="tel:+1-559-326-7015" target="_blank"><i class="fas fa-phone"></i> Call Now</a>
                 <a href="https://goo.gl/maps/JDVas8QyXwGMDcdX8" target="_blank"><i class="fas fa-directions"></i> Get Directions</a>
             </div>
@@ -41,10 +41,10 @@
                     <a href="?page=home">Home</a>
                 </li>
                 <li>
-                    <a href="?page=location">Location</a>
+                    <a href="?page=about">About & Location</a>
                 </li>
                 <li>
-                    <a href="?page=about">About</a>
+                    <a href="?page=contact">Contact Us</a>
                 </li>
             </ul>
         </div>

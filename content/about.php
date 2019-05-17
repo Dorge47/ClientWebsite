@@ -1,4 +1,20 @@
 <div class="about">
+    <div class="aboutrow">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2258.5211908028123!2d-119.70238810854464!3d36.817769898960684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945c7e8f9524fd%3A0xc77c772be11ae6f4!2s1st+Choice+Computer+Services!5e0!3m2!1sen!2sus!4v1556826737003!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="hours">
+            <h3 class="head">Business Hours</h3>
+            <p>Monday: 9:00 AM – 5:00 PM</p>
+            <p>Tuesday: 9:00 AM – 5:00 PM</p>
+            <p>Wednesday: 9:00 AM – 5:00 PM</p>
+            <p>Thursday: 9:00 AM – 5:00 PM</p>
+            <p>Friday: 9:00 AM – 1:00 PM</p>
+            <p>Saturday: Closed</p>
+            <p>Sunday: 9:00 AM – 1:00 PM</p>
+        </div>
+    </div>
+    <div class="aboutrow">
     <div class="phone">
         <h3 class="head">Contact</h3>
         <a href="tel:+1-559-326-7015" class="purpleBtn head">Call now</a>
@@ -13,14 +29,5 @@
             <p>United States</p>
         </div>
     </div>
-    <div class="hours">
-        <h3 class="head">Business Hours</h3>
-        <p>Monday: 9:00 AM – 5:00 PM</p>
-        <p>Tuesday: 9:00 AM – 5:00 PM</p>
-        <p>Wednesday: 9:00 AM – 5:00 PM</p>
-        <p>Thursday: 9:00 AM – 5:00 PM</p>
-        <p>Friday: 9:00 AM – 1:00 PM</p>
-        <p>Saturday: Closed</p>
-        <p>Sunday: 9:00 AM – 1:00 PM</p>
     </div>
 </div>

@@ -27,8 +27,36 @@ function toggleNav() {
     }
 }
 
-function toggleBox(boxNum) {
-    if(boxNum == "box1") {
-        
+function multihover(rowNum) {
+    for (let i = 0; i < 3; i++) {
+        document.getElementsByClassName(`multihover${rowNum}`)[i].style.backgroundColor = "rgba(100, 100, 230, 0.4)"
     }
 }
+
+function clearhover(rowNum) {
+    for (let i = 0; i < 3; i++) {
+        document.getElementsByClassName(`multihover${rowNum}`)[i].style.backgroundColor = ""
+    }
+}
+
+function phphover() {
+    if (document.getElementById('phprepair')) {
+        multihover(1);
+    }
+    if (document.getElementById('phpupgrades')) {
+        multihover(2);
+    }
+    if (document.getElementById('phpremoval')) {
+        multihover(3);
+    }
+    if (document.getElementById('phpmonitor')) {
+        multihover(4);
+    }
+    if (document.getElementById('phpmanage')) {
+        multihover(5);
+    }
+    if (document.getElementById('phpfactory')) {
+        multihover(6);
+    }
+}
+

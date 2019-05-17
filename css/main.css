@@ -9,20 +9,27 @@ a {
 
 .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.about div {
+.aboutrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 50%;
+}
+
+.aboutrow div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
 }
 
-.about .head {
+.aboutrow .head {
     margin-bottom: 24px;
 }
 
@@ -37,12 +44,27 @@ a {
 
 #bgImg {
     height: 110%;
-    filter: blur(5px) brightness(50%);
+    filter: blur(5px) brightness(60%);
     margin: 0;
     position: relative;
     top: 0;
     width: 120%;
     z-index: 0;
+}
+
+
+.btmNav {
+    background-color: white;
+    bottom: 0;
+    box-shadow: 0 0 5px grey;
+    display: none;
+    flex-direction: row;
+    height: 56px;
+    justify-content: space-around;
+    left: 0;
+    padding-top: 5px;
+    position: fixed;
+    width: 100%;
 }
 
 .column {
@@ -67,10 +89,6 @@ a {
 
 .columnTxt p:last-child {
     border-bottom: 0;
-}
-
-.columnTxt p:hover {
-    background: rgba(100, 100, 230, 0.4);
 }
 
 .columnCont {
@@ -99,6 +117,55 @@ a {
     width: 100%;
     z-index: 1;
 }
+
+.contact {
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 1%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+.contact input[type="text"] {
+    margin-left: .5em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+}
+
+.contact input[type="submit"] {
+    background: rgba(50, 50, 230, 0.4);
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transition: .4s;
+    margin: 0 auto;
+}
+
+.contact input::placeholder {
+    color: rgba(230, 230, 230);
+}
+
+.contact input:focus {
+    outline: none;
+}
+
+.contact textarea {
+    margin-top: 1em;
+    border: 1px solid rgba(230,230,230,0.3);
+    border-radius: 10px;
+    background: rgba(230, 230, 230, 0.5);
+}
+
+.contact {
+    
+}
+
 
 footer {
     color: #cccccc;
@@ -145,7 +212,12 @@ html, body {
     width: 80%;
 }
 
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
 .mainCont {
+    background: black;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -227,6 +299,16 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     margin: 0 16px;
+}
+
+.navBtm {
+    align-items: center;
+    color: #48487f;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    justify-content: space-around;
 }
 
 .navul {
@@ -377,14 +459,35 @@ html, body {
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 1366px) {
+    
+}
 
-/*https://goo.gl/maps/JDVas8QyXwGMDcdX8*/
 @media only screen and (max-width: 1024px) {
 
 }
 
 @media only screen and (max-width: 640px) {
-
+    .btmNav {
+        display: flex;
+    }
+    footer {
+        margin-bottom: 54px;
+    }
+    .menubar {
+        display: none;
+    }
+    .nav-top {
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .nav-top .left p {
+        font-size: 16px;
+        padding: 0;
+    }
+    .nav-top .right {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 320px) {
