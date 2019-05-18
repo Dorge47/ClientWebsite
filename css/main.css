@@ -7,12 +7,35 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(230,230,230)
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(191,186,255);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(101,96,160);
+}
+
 .about {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: rgba(230, 230, 230, 0.5);
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .aboutrow {
@@ -65,6 +88,7 @@ a {
     padding-top: 5px;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 .column {
@@ -80,6 +104,7 @@ a {
 }
 
 .columnTxt p {
+    font-family: 'Open Sans', sans-serif;
     padding-top: 8%;
     padding-bottom: 8%;
     transition: .5s;
@@ -88,6 +113,31 @@ a {
 }
 
 .columnTxt p:last-child {
+    border-bottom: 0;
+}
+
+.mobile {
+    align-content: center;
+    align-items: center;
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+}
+
+.columnMobile {
+    transition: .5s;
+    margin: 0;
+    border-bottom: 2px dashed rgba(30, 30, 30, 0.5);
+    width: 100%;
+}
+
+.columnMobile:last-child {
     border-bottom: 0;
 }
 
@@ -125,13 +175,14 @@ a {
     padding: 1%;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
+    text-align: center;
 }
 
 .contact input[type="text"] {
     margin-left: .5em;
     background: none;
     border: none;
-    border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+    border-bottom: 1px solid rgba(210, 210, 210, 0.5);
 }
 
 .contact input[type="submit"] {
@@ -147,7 +198,7 @@ a {
 }
 
 .contact input::placeholder {
-    color: rgba(230, 230, 230);
+    color: rgba(210, 210, 210);
 }
 
 .contact input:focus {
@@ -156,13 +207,13 @@ a {
 
 .contact textarea {
     margin-top: 1em;
-    border: 1px solid rgba(230,230,230,0.3);
+    border: 1px solid rgba(190,190,190,0.3);
     border-radius: 10px;
-    background: rgba(230, 230, 230, 0.5);
+    background: rgba(210, 210, 210, 0.5);
 }
 
 .contact {
-    
+
 }
 
 
@@ -324,9 +375,9 @@ input:focus, select:focus, textarea:focus, button:focus {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     height: 64px;
-    padding-left: 120px;
+    padding-left: 30%;
     padding-top: 40px;
-    width: 400px;
+    width: 100%;
 }
 
 .phone p {
@@ -459,7 +510,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 @media only screen and (max-width: 1366px) {
-    
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -467,14 +518,48 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 @media only screen and (max-width: 640px) {
+    .about {
+        max-height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .aboutrow {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+    .address div {
+        margin-bottom: 60px;
+    }
+    #bgImg {
+        display: none;
+    }
     .btmNav {
         display: flex;
     }
     footer {
-        margin-bottom: 54px;
+        display: none;/*out of sight, out of mind*/
     }
-    .menubar {
-        display: none;
+    .googReview {
+        margin-top: 20px;
+        width: 90%;
+    }
+    .mainCont {
+        background-color: rgba(250, 250, 250);
+    }
+    .mainpgeTxt {
+        width: 90%;
+    }
+    .map {
+        height: auto;
+        max-width: 100%;
+    }
+    .map iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    .nav-left {
+        width: 300px;
     }
     .nav-top {
         justify-content: center;
@@ -487,6 +572,41 @@ input:focus, select:focus, textarea:focus, button:focus {
     .nav-top .right {
         display: none;
     }
+    .purpleBtn {
+        max-width: 60%;
+    }
+    .row {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .rowContainer {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: relative;
+    }
+    .servicesTxt {
+        width: 80%;
+    }
+    .txtButtons {
+        flex-direction: column;
+    }
+    .txtCont a {
+        margin: 8px 0;
+        width: 75%;
+    }
+    .mobile {
+      display: flex;
+    }
+    .columnCont {
+      display: none;
+    }
+
+    .contact textarea {
+      width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {

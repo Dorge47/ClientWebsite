@@ -1,19 +1,19 @@
 <div class="mainCont">
     <img src="img/services.jpg" alt="" id="bgImg">
-    
+
     <div class="rowContainer">
         <div class="header">
             <h1>Computer Services</h1>
         </div>
         <div class="row rowServices">
             <div class="txtCont servicesTxt">
-                <h1>Computer Repair</h1>
-                <p>Our most straight forward Repair Service. This service includes repairing computer hardware, phones, tablets, laptops, and more.</p><br>
+                <h1>Diagnostics</h1>
+                <p>The basic service that will target the problem and determine a possible solution to it. Covers all possible issues and guarentees a solution.</p><br>
                 <a href="?page=pricing&product=repair">View Price</a>
             </div>
             <div class="txtCont servicesTxt">
                 <h1>Computer Upgrade</h1>
-                <p>This service is for upgrading parts within a computer. This includes hard drives, processors, RAM, and more.</p><br>
+                <p>This service is for upgrading parts within a computer. This includes hard drives, processors, RAM, graphics cards, and much more.</p><br>
                 <a href="?page=pricing&product=upgrades">View Price</a>
             </div>
             <div class="txtCont servicesTxt">
@@ -24,13 +24,13 @@
         </div>
         <div class="row rowServices">
             <div class="txtCont servicesTxt">
-                <h1>Computer Monitoring</h1>
-                <p>If you wish to have your computer always safe from problems, this service will be very helpful. Business Computers, Data Centers, and more can be monitored.</p><br>
+                <h1>On-site Service</h1>
+                <p>If a computer cannot be brought into our office, then going to the location of the computer and servicing it directly on-site can be done.</p><br>
                 <a href="?page=pricing&product=monitor">View Price</a>
             </div>
             <div class="txtCont servicesTxt">
-                <h1>Remote Mangaging</h1>
-                <p>For businesses that require their PCs to be managed and fixed without needing to return to our office. All other services can be done with this service.</p><br>
+                <h1>Remote Monitoring & Management</h1>
+                <p>For businesses that require their PCs to be monitored and fixed without needing to return to our office. All other services can be done with this service.</p><br>
                 <a href="?page=pricing&product=manage">View Price</a>
             </div>
             <div class="txtCont servicesTxt">

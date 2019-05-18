@@ -19,9 +19,9 @@
             echo "<div id=\"phpfactory\"></div>";
         }
     }
-?>  
-<div class="mainCont" on>
-    <img src="http://placehold.it/1920x1080" alt="" id="bgImg">
+?>
+<div class="mainCont">
+    <img src="img/services.jpg" alt="" id="bgImg">
     <div class="columnMain">
         <div class="columnCont">
             <div class="column">
@@ -30,12 +30,12 @@
                 </div>
                 <br>
                 <div class="columnTxt">
-                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">Computer Repair</p>
+                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">Diagnostics</p>
                     <p class="multihover2" onmouseover="multihover(2)" onmouseout="clearhover(2)">Computer Upgrade</p>
                     <p class="multihover3" onmouseover="multihover(3)" onmouseout="clearhover(3)">Virus Removal</p>
-                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">Computer Monitoring</p>
-                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">Remote Mangaging</p>
-                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">Factory Recovery</p>    
+                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">On-site Services</p>
+                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">Remote Monitoring & Management</p>
+                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">Factory Recovery</p>
                 </div>
             </div>
             <div class="column">
@@ -44,28 +44,60 @@
                 </div>
                 <br>
                 <div class="columnTxt">
-                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">Price</p>
-                    <p class="multihover2" onmouseover="multihover(2)" onmouseout="clearhover(2)">Price</p>
-                    <p class="multihover3" onmouseover="multihover(3)" onmouseout="clearhover(3)">Price</p>
-                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">Price</p>
-                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">Price</p>
-                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">Price</p>
+                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">$79 USD (Flat Rate)</p>
+                    <p class="multihover2" onmouseover="multihover(2)" onmouseout="clearhover(2)">$45 USD (Labor Costs)</p>
+                    <p class="multihover3" onmouseover="multihover(3)" onmouseout="clearhover(3)">$89 USD (Flat Rate)</p>
+                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">$75 USD</p>
+                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">$29.95 USD (Per Device)</p>
+                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">$99 USD (Flat Rate)</p>
                 </div>
             </div>
             <div class="column">
                 <div class="columnHead">
-                    <h1>Time to Complete</h1>
+                    <h1>Time for Completion</h1>
                 </div>
                 <br>
                 <div class="columnTxt">
-                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">Days</p>
-                    <p class="multihover2" onmouseover="multihover(2)" onmouseout="clearhover(2)">Days</p>
-                    <p class="multihover3" onmouseover="multihover(3)" onmouseout="clearhover(3)">Days</p>
-                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">Days</p>
-                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">Days</p>
-                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">Days</p>
+                    <p class="multihover1" onmouseover="multihover(1)" onmouseout="clearhover(1)">2-3 Days Upon Start of Service</p>
+                    <p class="multihover2" onmouseover="multihover(2)" onmouseout="clearhover(2)">2-3 Days Upon Start of Service</p>
+                    <p class="multihover3" onmouseover="multihover(3)" onmouseout="clearhover(3)">2-3 Days Upon Start of Service</p>
+                    <p class="multihover4" onmouseover="multihover(4)" onmouseout="clearhover(4)">Hourly</p>
+                    <p class="multihover5" onmouseover="multihover(5)" onmouseout="clearhover(5)">Monthly</p>
+                    <p class="multihover6" onmouseover="multihover(6)" onmouseout="clearhover(6)">2-3 Days Upon Start of Service</p>
                 </div>
             </div>
+        </div>
+        <div class="mobile">
+          <div class="columnMobile">
+            <h3>Diagnostics</h1>
+            <p>$79 USD (Flat Rate)</p>
+            <p>2-3 Days Upon Start of Service</p>
+          </div>
+          <div class="columnMobile">
+            <h3>Computer Upgrade</h1>
+            <p>>$45 USD (Labor Costs)</p>
+            <p>2-3 Days Upon Start of Service</p>
+          </div>
+          <div class="columnMobile">
+            <h3>Virus Removal</h1>
+            <p>$89 USD (Flat Rate)</p>
+            <p>2-3 Days Upon Start of Service</p>
+          </div>
+          <div class="columnMobile">
+            <h3>On-site Services</h1>
+            <p>>$75 USD</p>
+            <p>Hourly</p>
+          </div>
+          <div class="columnMobile">
+            <h3>Remote Monitoring & Management</h1>
+            <p>$29.95 USD (Per Device)</p>
+            <p>Monthly</p>
+          </div>
+          <div class="columnMobile">
+            <h3>Factory Recovery</h1>
+            <p>$99 USD (Flat Rate)</p>
+            <p>2-3 Days Upon Start of Service</p>
+          </div>
         </div>
     </div>
 </div>

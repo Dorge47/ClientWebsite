@@ -1,4 +1,4 @@
-<?php 
+<?php
 $error ='';
 $firstName ='';
 $lastName ='';
@@ -13,24 +13,30 @@ return $string;
 }
 if(isset($_POST["submit"])){
 if(empty($_POST["firstName"])){
-    $error .= '<p><label class="text-danger">Please enter your name</label></p>';
+    $error .= '<p><label class="text-danger">First Name Error: Please enter your name</label></p>';
 }
 else{
-    
+
     $name = clean_text($_POST["firstName"]);
-    if(!preg_match("/^[a-zA-Z]*$/",$name)){
-        $error = '<p><label class="text-danger">Only letters and white space allowed</label></p>';
+    if(!preg_match("/^[a-zA-Z\-\s]*$/",$name)){
+        $error = '<p><label class="text-danger">First Name Error: Only letters and white space allowed</label></p>';
     }
 }
 if(empty($_POST["lastName"])){
-    $error .= '<p><label class="text-danger">Please enter your last name</label></p>';
+    $error .= '<p><label class="text-danger">Last Name Error: Please enter your last name</label></p>';
 }
 else{
-    
+
     $lastName = clean_text($_POST["lastName"]);
-    if(!preg_match("/^[a-zA-Z]*$/",$lastName)){
-        $error = '<p><label class="text-danger">Only letters and white space allowed</label></p>';
+    if(!preg_match("/^[a-zA-Z\-\s]*$/",$lastName)){
+        $error = '<p><label class="text-danger">Last Name Error: Only letters and white space allowed</label></p>';
     }
+}
+if(empty($_POST["message"])){
+    $error .= '<p><label class="text-danger">Please enter a Question or concern in the text box.</label></p>';
+}
+else{
+    $message = clean_text($_POST["message"]);
 }
 if(empty($_POST["phoneNumber"])){
     $error .= '<p><label class="text-danger">Please enter your phone number</label></p>';
@@ -46,10 +52,10 @@ else {
 }
 if(empty($_POST["reasonSelect"])){
     $error .= '<p><label class="text-danger">Please choose a reason</label></p>';
-    
+
 }else{
-    
-    $list = clean_text($_POST["reasonSelect"]);   
+
+    $list = clean_text($_POST["reasonSelect"]);
 }
 if($error == ''){
     $file_open = fopen("contact_data.csv", "a");
@@ -62,7 +68,9 @@ if($error == ''){
         'name' => $name,
         'lastName' => $lastName,
         'phoneNumber' => $phoneNumber,
-        'list' => $list
+        'email' => $email,
+        'list' => $list,
+        'message' => $message
     );
     fputcsv($file_open, $form_data);
     $error = '<label class="text-success">Thanks for contacting me! I will get back to you ASAP!';
@@ -85,14 +93,14 @@ function toReset(){
     <div class="rowContainer oneRow">
             <form class="contact" action="index.php?page=contact" method="post">
                 <label for="firstName">First Name</label>
-                <input type="text" name="firstName" placeholder="Talib">
+                <input type="text" name="firstName" placeholder="Talib"><br>
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" placeholder="Abdul-Maalik">
+                <input type="text" name="lastName" placeholder="Abdul-Maalik"><br>
                 <br><br>
                 <label for="lastName">Phone Number</label>
-                <input type="text" name="phoneNumber" placeholder="(559)-575-9163">
+                <input type="text" name="phoneNumber" placeholder="(559)-575-9163"><br>
                 <label for="lastName">Email</label>
-                <input type="text" name="email" placeholder="talibabdulmaalik@gmail.com">
+                <input type="text" name="email" placeholder="talibabdulmaalik@gmail.com"><br>
                 <br><br>
                 <label for="reasonSelect">Reason for Contacting</label>
                 <select name="reasonSelect">
@@ -100,7 +108,6 @@ function toReset(){
                     <option value="Quote">Quote for Service</option>
                     <option value="Question">Question about Service</option>
                     <option value="Appointment">Set up an Appointment</option>
-                    <option value="Placeholder">Placeholder</option>
                     <option value="Other">Other...</option>
                 </select>
                 <br><br>

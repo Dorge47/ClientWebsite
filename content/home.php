@@ -3,12 +3,11 @@
     <div class="rowContainer twoRows">
         <div class="row">
             <div class="txtCont mainpgeTxt">
-                <h1>Header</h1><br>
-                <p>&nbsp&nbsp&nbsp1st Choice Computer Services, your 1st choice in everything computers. We specialize in Managed Services like; troubleshooting, diagnostics, installation & computer setup, as well as parts and repairs. We offer one of the top mobile onsite repair services around and we service the entire Fresno area. Our prices are very affordable but our service is priceless. We offer 30 warranties on all of our labor and guarantee that we'll fix your computer problem for the long haul. <br><br>&nbsp&nbsp&nbspWe understand how vital it is to have access to the interent and how important the computer is in everyday life. There is no way that you should have to do without yours! We'll make sure we get you back connected and things stay that way.</p><br>
+                <h1>Welcome to Computer Services Network</h1><br>
+                <p>&nbsp&nbsp&nbspComputer Services Network, your 1st choice in everything computers. We specialize in Managed Services like; troubleshooting, diagnostics, installation & computer setup, as well as parts and repairs. We offer one of the top mobile onsite repair services around and we service the entire Fresno area. Our prices are very affordable but our service is priceless. We offer 30 warranties on all of our labor and guarantee that we'll fix your computer problem for the long haul. <br><br>&nbsp&nbsp&nbspWe understand how vital it is to have access to the interent and how important the computer is in everyday life. There is no way that you should have to do without yours! We'll make sure we get you back connected and things stay that way.</p><br>
                 <div class="txtButtons">
                     <a href="?page=services">Services Page</a>
                     <a href="?page=pricing">Pricing Page</a>
-                    <a href="atom://teletype/portal/ac943ec0-a99d-4ef1-95b6-2a7e3dfb5444">Teletype</a>
                 </div>
             </div>
             <div class="googReview">
