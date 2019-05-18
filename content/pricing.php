@@ -69,32 +69,32 @@
         </div>
         <div class="mobile">
           <div class="columnMobile">
-            <h3>Diagnostics</h1>
+            <h3>Diagnostics</h3>
             <p>$79 USD (Flat Rate)</p>
             <p>2-3 Days Upon Start of Service</p>
           </div>
           <div class="columnMobile">
-            <h3>Computer Upgrade</h1>
+            <h3>Computer Upgrade</h3>
             <p>>$45 USD (Labor Costs)</p>
             <p>2-3 Days Upon Start of Service</p>
           </div>
           <div class="columnMobile">
-            <h3>Virus Removal</h1>
+            <h3>Virus Removal</h3>
             <p>$89 USD (Flat Rate)</p>
             <p>2-3 Days Upon Start of Service</p>
           </div>
           <div class="columnMobile">
-            <h3>On-site Services</h1>
+            <h3>On-site Services</h3>
             <p>>$75 USD</p>
             <p>Hourly</p>
           </div>
           <div class="columnMobile">
-            <h3>Remote Monitoring & Management</h1>
+            <h3>Remote Monitoring & Management</h3>
             <p>$29.95 USD (Per Device)</p>
             <p>Monthly</p>
           </div>
           <div class="columnMobile">
-            <h3>Factory Recovery</h1>
+            <h3>Factory Recovery</h3>
             <p>$99 USD (Flat Rate)</p>
             <p>2-3 Days Upon Start of Service</p>
           </div>

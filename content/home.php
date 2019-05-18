@@ -4,7 +4,7 @@
         <div class="row">
             <div class="txtCont mainpgeTxt">
                 <h1>Welcome to Computer Services Network</h1><br>
-                <p>&nbsp&nbsp&nbspComputer Services Network, your 1st choice in everything computers. We specialize in Managed Services like; troubleshooting, diagnostics, installation & computer setup, as well as parts and repairs. We offer one of the top mobile onsite repair services around and we service the entire Fresno area. Our prices are very affordable but our service is priceless. We offer 30 warranties on all of our labor and guarantee that we'll fix your computer problem for the long haul. <br><br>&nbsp&nbsp&nbspWe understand how vital it is to have access to the interent and how important the computer is in everyday life. There is no way that you should have to do without yours! We'll make sure we get you back connected and things stay that way.</p><br>
+                <p>&nbsp;&nbsp;&nbsp;Computer Services Network, your 1st choice in everything computers. We specialize in Managed Services like; troubleshooting, diagnostics, installation & computer setup, as well as parts and repairs. We offer one of the top mobile onsite repair services around and we service the entire Fresno area. Our prices are very affordable but our service is priceless. We offer 30 warranties on all of our labor and guarantee that we'll fix your computer problem for the long haul. <br><br>&nbsp;&nbsp;&nbsp;We understand how vital it is to have access to the interent and how important the computer is in everyday life. There is no way that you should have to do without yours! We'll make sure we get you back connected and things stay that way.</p><br>
                 <div class="txtButtons">
                     <a href="?page=services">Services Page</a>
                     <a href="?page=pricing">Pricing Page</a>
@@ -103,18 +103,7 @@ if (isset($reviews)) {
     }
 }
 
-/*if (isset($reviews)) {
-  echo '<div class="quote"><strong>'.$customer.'</strong><br>';
-  foreach ($reviews as $review) {
-    if ($show_only_if_with_text == true and empty($review[3])) continue;
-    if ($review[4] <= $show_only_if_greater_x) continue;
-    for ($i=1; $i <= $review[4]; ++$i) echo '⭐'; // RATING
-    echo '<p>'.$review[3].'<br>'; // TEXT
-    echo '<small>'.$review[0][1].'</small></p>'; // AUTHOR
-    if ($show_rule_after_review == true) echo '<hr size="1">';
-  }
-  echo '</div>';
-}*/
+
 ?>
 
             </div>

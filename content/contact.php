@@ -93,17 +93,17 @@ function toReset(){
     <div class="rowContainer oneRow">
             <form class="contact" action="index.php?page=contact" method="post">
                 <label for="firstName">First Name</label>
-                <input type="text" name="firstName" placeholder="Talib"><br>
+                <input type="text" name="firstName" id="firstName" placeholder="John"><br>
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" placeholder="Abdul-Maalik"><br>
+                <input type="text" name="lastName" id="lastName" placeholder="Smith"><br>
                 <br><br>
-                <label for="lastName">Phone Number</label>
-                <input type="text" name="phoneNumber" placeholder="(559)-575-9163"><br>
-                <label for="lastName">Email</label>
-                <input type="text" name="email" placeholder="talibabdulmaalik@gmail.com"><br>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="(123)-456-7890"><br>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="johnSmith@gmail.com"><br>
                 <br><br>
                 <label for="reasonSelect">Reason for Contacting</label>
-                <select name="reasonSelect">
+                <select name="reasonSelect" id="reasonSelect">
                     <option value="none">Select a Reason...</option>
                     <option value="Quote">Quote for Service</option>
                     <option value="Question">Question about Service</option>
@@ -112,7 +112,7 @@ function toReset(){
                 </select>
                 <br><br>
                 <label for="message">Please type your Message here.</label><br>
-                <textarea name="message" rows="8" cols="80"></textarea>
+                <textarea name="message" rows="8" cols="80" id="message"></textarea>
                 <br><br>
                 <input type="submit" value="submit" name="submit">
             </form>
