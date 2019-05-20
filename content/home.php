@@ -1,5 +1,4 @@
 <div class="mainCont">
-    <img src="img/mainpage.jpg" alt="Background image" id="bgImg">
     <div class="rowContainer twoRows">
         <div class="row">
             <div class="txtCont mainpgeTxt">

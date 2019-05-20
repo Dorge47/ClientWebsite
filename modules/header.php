@@ -12,7 +12,7 @@
     <title>Computer Services Network</title>
 </head>
 
-<body onload="startup()">
+<body onload="startup()" id="<?php echo (isset($_GET['page']) ? $_GET['page'] : home); ?>">
     <nav>
         <div class="nav-top">
             <div class="left">

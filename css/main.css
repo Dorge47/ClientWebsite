@@ -25,17 +25,17 @@ a {
 }
 
 .about {
+    align-items: center;
+    background: rgba(230, 230, 230, 0.5);
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    background: rgba(230, 230, 230, 0.5);
-    padding-top: 4em;
     padding-bottom: 4em;
+    padding-top: 4em;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .aboutrow {
@@ -50,10 +50,10 @@ a {
 }
 
 .aboutrow div {
+    align-content: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: flex-start;
 }
 
 .aboutrow .head {
@@ -69,16 +69,13 @@ a {
     margin: 0;
 }
 
-#bgImg {
-    height: 110%;
-    filter: blur(5px) brightness(60%);
-    margin: 0;
-    position: relative;
-    top: 0;
-    width: 120%;
-    z-index: 0;
+body#home {
+    background-image: url(../img/mainpage-blur.jpg);
 }
 
+body#services {
+    background-image: url(../img/services-blur.jpg);
+}
 
 .btmNav {
     background-color: white;
@@ -103,41 +100,27 @@ a {
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .columnTxt p {
+    border-bottom: 2px dashed rgba(230, 230, 230, 0.5);
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     padding-top: 8%;
     padding-bottom: 8%;
     transition: .5s;
-    margin: 0;
-    border-bottom: 2px dashed rgba(230, 230, 230, 0.5);
 }
 
 .columnTxt p:last-child {
     border-bottom: 0;
 }
 
-.mobile {
-    align-content: center;
-    align-items: center;
-    display: none;
-    justify-content: space-around;
-    flex-direction: column;
-    background: rgba(230, 230, 230, 0.5);
-    border: 1px solid grey;
-    text-align: center;
-    overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .9em;
-}
-
 .columnMobile {
-    transition: .5s;
-    margin: 0;
     border-bottom: 2px dashed rgba(30, 30, 30, 0.5);
+    margin: 0;
+    transition: .5s;
     width: 100%;
 }
 
@@ -159,10 +142,10 @@ a {
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
-    padding: 1%;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     margin: 0 auto;
+    padding: 1%;
+    text-align: center;
 }
 
 .columnMain {
@@ -176,9 +159,9 @@ a {
     background: rgba(230, 230, 230, 0.5);
     border: 1px solid grey;
     border-radius: 20px;
-    padding: 1%;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
+    padding: 1%;
     text-align: center;
 }
 
@@ -222,6 +205,7 @@ a {
 
 
 footer {
+    background-color: white;
     color: #cccccc;
     display: flex;
     flex-direction: row;
@@ -266,17 +250,16 @@ html, body {
     width: 80%;
 }
 
-input:focus, select:focus, textarea:focus, button:focus {
-    outline: none;
-}
-
 .hours p {
     margin: 5px;
     white-space: nowrap;
 }
 
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
 .mainCont {
-    background: black;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -285,8 +268,18 @@ input:focus, select:focus, textarea:focus, button:focus {
     overflow: hidden;
 }
 
-.hours p {
-    margin: 5px;
+.mobile {
+    align-content: center;
+    align-items: center;
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    background: rgba(230, 230, 230, 0.5);
+    border: 1px solid grey;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
 }
 
 .mainpgeTxt {
@@ -307,6 +300,10 @@ input:focus, select:focus, textarea:focus, button:focus {
     background-color: black;
     height: 2px;
     width: 18px;
+}
+
+nav {
+    background-color: white;
 }
 
 .nav-left {
@@ -443,7 +440,6 @@ input:focus, select:focus, textarea:focus, button:focus {
     height: 100%;
     justify-content: space-around;
     overflow: hidden;
-    position: absolute;
     width: 100%;
     z-index: 1;
 }
@@ -501,10 +497,9 @@ input:focus, select:focus, textarea:focus, button:focus {
     background: rgba(50, 50, 230, 0.4);
     border-radius: 20px;
     color: white;
-    padding: 2%;
+    padding: 2% 4%;
     text-align: center;
     transition: .4s;
-    width: 20%;
 }
 
 .txtCont a:hover {
@@ -516,6 +511,10 @@ input:focus, select:focus, textarea:focus, button:focus {
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 1770px) {
+    
 }
 
 @media only screen and (max-width: 1366px) {
@@ -564,8 +563,8 @@ input:focus, select:focus, textarea:focus, button:focus {
         max-width: 100%;
     }
     .map iframe {
-        max-width: 100%;
         height: auto;
+        max-width: 100%;
     }
     .nav-left {
         width: 300px;

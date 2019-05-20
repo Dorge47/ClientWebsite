@@ -1,6 +1,4 @@
 <div class="mainCont">
-    <img src="img/services.jpg" alt="" id="bgImg">
-
     <div class="rowContainer">
         <div class="header">
             <h1>Computer Services</h1>
