@@ -45,6 +45,10 @@ a {
     max-width: 50%;
 }
 
+.aboutrow:last-child {
+    width: 50%;
+}
+
 .aboutrow div {
     display: flex;
     flex-direction: column;
@@ -264,6 +268,11 @@ html, body {
 
 input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
+}
+
+.hours p {
+    margin: 5px;
+    white-space: nowrap;
 }
 
 .mainCont {
