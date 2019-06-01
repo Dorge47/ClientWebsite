@@ -62,9 +62,9 @@ if ( preg_match($pattern, $result, $match) ) {
   $reviews = $reviews[0][1][0][14][52][0];
 }
 
-$myfile = fopen("testfile".time().".json", "w");
-fwrite($myfile, json_encode($reviews));
-fclose($myfile);
+// $myfile = fopen("testfile".time().".json", "w");
+// fwrite($myfile, json_encode($reviews));
+// fclose($myfile);
 
 function getReviewInfo($reviewPassed) {
     $author = $reviewPassed[0][1];
